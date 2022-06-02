@@ -1,0 +1,293 @@
+
+
+
+body{
+margin: 0px;
+padding: 0px;
+background: #F3F5FC;    /* Light blue/light-blue-100 */
+}
+
+
+
+
+.caja{
+    width: 1920px;
+    height: 1080px;
+    border-radius: 0px;
+    background: #F3F5FC;    /* Light blue/light-blue-100 */
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    color: #0A3871;
+    font-family: 'Inter';
+}
+
+.logo{
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 100px;
+    top: 70px;
+}
+
+.panel-izquierdo{
+    float: left;
+    width: 65%;
+    height: 50%;
+    border-radius: 24px;
+    background: #F3F5FC;    /* Light blue/light-blue-100 */
+    display: flex;
+}
+
+.texto{
+    float: left;
+ /*   margin: 100px 60px 60px 200px; */
+    margin-left: 190px;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    color: #0A3871;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    background: #F3F5FC;    /* Light blue/light-blue-100 */
+
+}
+
+.botones{
+    float: left;
+    width: 65%;
+    height: 20%;
+    border-radius: 24px;
+    background: #F3F5FC;    /* Light blue/light-blue-100 */
+
+}
+
+#solo-letras{
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-bottom: 5px;
+}
+#boton-encriptar{
+    margin: 2% 50% 0% 15%;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #0A3871;  /* Dark blue/dark-blue-300 */
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.encriptar{
+    margin: auto;
+    color: white;
+}
+
+#boton-desencriptar{
+    margin: -5% 0% 10% 55%;
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #D8DFE8;  /* Light gray */
+    border: 1px solid #0A3871;  /* Dark blue/dark-blue-300 */
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.desencriptar{
+    margin: auto;
+    color: #0A3871;
+}
+
+.panel-derecho{
+    /*margin: 0px 0px 0px 0px; */
+    float: right;
+    width: 30%;
+    height: 70%;
+    border-radius: 24px;
+    background: #FFFFFF;
+    margin-right: 70px;
+}
+
+.imagen{
+    display: flex;
+    margin: 80px auto;
+    margin-bottom: 10px;
+}
+
+#ningun-mensaje{
+    text-align: center;
+    font-family: 'Inter';
+    color: #343A40;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#mensajeInferior{
+    float: left;
+    margin-left: 133px;
+   /* margin-top: 250px; */
+    text-align: center;
+    display: flex;
+    height: 120px;
+    width: 300px;
+    color: #495057;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;  
+}
+
+#copiar{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    padding-top: 11px;
+    padding-left: 45px;
+    padding-right: 43px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-family: 'inter';
+    font-weight: bold;
+    color: #0A3871;
+
+    background: #D8DFE8;  /* Light gray */
+    border: 1px solid #0A3871;  /* Dark blue/dark-blue-300 */
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    display: none;  /* para que no se muestre el boton al iniciar la pagina */ 
+}
+
+
+.footer{
+    background: #0A3871;
+    height: 100px;
+    width: 1920px;
+    text-align: center;
+    font-family: 'inter';
+    color: #ffffff;
+    font-size: 2em;
+    padding-top: 45px;
+}
+
+
+/* Media Queries ( TODAVIA NO TERMINE DE HACERLO RESPONSIVE, DEBO SEGUIR LEYENDO Y PRACTICANDO  */
+
+@media screen and (max-width: 768px) {
+    
+    .titulo{
+        text-align: center;
+        margin-top: 20%;
+    }
+    
+    .logo{
+        position: absolute;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .logoImagen{
+        margin-left: -50px;
+    }
+
+    .caja{
+        position: relative;
+        width: 100%;
+        height: 1174px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+
+    .panel-izquierdo{
+        width: 100%;
+        height: 80%;
+    }
+
+    .texto{
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .botones{
+        width: 100%;
+    }
+
+    #solo-letras{
+        margin-left: 8%;
+    }
+    
+    #boton-encriptar{
+        margin-left: 50px;
+    }
+    
+    #boton-desencriptar{
+        display: block;
+        margin-top: -65px;
+    }
+    
+
+    .panel-derecho{
+        display: none;
+    }
+
+    /* #ningun-mensaje{
+
+    }*/
+
+
+    .footer{
+        width: 100%;
+        height: 75px;
+    /* text-align: center; */
+        font-size: 1.5em;
+    }
+
+} 

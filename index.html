@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--Esta meta básicamente lo que hace es decirle al navegador que queremos que use y adapte nuestra página para dispositivos móviles también-->
+    <title>Challenge Alura - Encriptador de Texto</title>
+    <!-- <link rel="stylesheet"  href="/Challenge 01 - Encriptador de Texto/reset.css"> -->
+    <link rel="stylesheet"  href="style.css"> <!--sirve para vincular el archivo css donde cargamos propiedades-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>   <!-- Traigo el documento javascript q tambien hice -->
+    
+</head>
+
+<body>
+
+    <div class="caja">
+
+        <div>
+            <h1 class="titulo">Encriptador de Texto</h1>
+        </div>
+
+        <div class="logo">
+            <img class="logoImagen" src="Imagenes/logo.jpg" alt="Logo Alura">
+        </div>
+
+        <div class="panel-izquierdo">
+            <input class="texto" id="textoInput" type="text" placeholder="Ingrese el texto aquí"  size="48">
+        </div>
+
+        <div class="panel-derecho">
+            
+            <img class="imagen" id="imagen" src="Imagenes/Muñeco.jpg" alt="Imagen busqueda">
+
+            <h1 id="ningun-mensaje">Ningún mensaje fue encontrado</h1>
+            <textarea name="mensajeInferior" id="mensajeInferior" cols="30" rows="5">Ingresa el texto que desees encriptar o desencriptar</textarea>
+            <button type="button" id="copiar" onclick="copiar()">Copiar</button>
+            
+        </div>
+
+        <div class="botones">
+            <h4 id="solo-letras">✪ Solo letras minúsculas y sin acentos</h4>
+            <button type="button" id="boton-encriptar"  onclick="encriptar()"><h3 class="encriptar">Encriptar</h3></button>
+            <button type="button" id="boton-desencriptar"  onclick="desencriptar()"><h3 class="desencriptar">Desencriptar</h3></button>
+        </div>
+
+    </div>
+
+
+</body>
+
+<footer class="footer">✯ Todos los derechos reservados - Christian Albornoz ✯</footer>
+
+</html>
+
+
